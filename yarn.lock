@@ -1510,6 +1510,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@pkgr/core@npm:^0.1.0":
+  version: 0.1.1
+  resolution: "@pkgr/core@npm:0.1.1"
+  checksum: 6f25fd2e3008f259c77207ac9915b02f1628420403b2630c92a07ff963129238c9262afc9e84344c7a23b5cc1f3965e2cd17e3798219f5fd78a63d144d3cceba
+  languageName: node
+  linkType: hard
+
 "@react-native-community/cli-clean@npm:^9.2.1":
   version: 9.2.1
   resolution: "@react-native-community/cli-clean@npm:9.2.1"
@@ -2239,10 +2246,13 @@ __metadata:
     "@typescript-eslint/parser": ^5.37.0
     babel-jest: ^26.6.3
     eslint: ^7.32.0
+    eslint-config-prettier: ^9.1.0
+    eslint-plugin-prettier: ^5.2.1
     jest: ^26.6.3
     metro-react-native-babel-preset: 0.72.3
     react: 18.1.0
     react-native: 0.70.10
+    react-native-clean-project: ^4.0.3
     react-test-renderer: 18.1.0
     typescript: ^4.8.3
   languageName: unknown
@@ -4096,6 +4106,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-config-prettier@npm:^9.1.0":
+  version: 9.1.0
+  resolution: "eslint-config-prettier@npm:9.1.0"
+  peerDependencies:
+    eslint: ">=7.0.0"
+  bin:
+    eslint-config-prettier: bin/cli.js
+  checksum: 9229b768c879f500ee54ca05925f31b0c0bafff3d9f5521f98ff05127356de78c81deb9365c86a5ec4efa990cb72b74df8612ae15965b14136044c73e1f6a907
+  languageName: node
+  linkType: hard
+
 "eslint-plugin-eslint-comments@npm:^3.1.2":
   version: 3.2.0
   resolution: "eslint-plugin-eslint-comments@npm:3.2.0"
@@ -4137,6 +4158,26 @@ __metadata:
     eslint: ">= 5.0.0"
     prettier: ">= 1.13.0"
   checksum: f591459f6991f15088740c296f9ed736bd7100e8e5fd8dcb4d71017413f55c97faad89672b1a8f9860dbcb73f8fbbf1a3a89ab5de3a7077b3fe42e7609d46c04
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-prettier@npm:^5.2.1":
+  version: 5.2.1
+  resolution: "eslint-plugin-prettier@npm:5.2.1"
+  dependencies:
+    prettier-linter-helpers: ^1.0.0
+    synckit: ^0.9.1
+  peerDependencies:
+    "@types/eslint": ">=8.0.0"
+    eslint: ">=8.0.0"
+    eslint-config-prettier: "*"
+    prettier: ">=3.0.0"
+  peerDependenciesMeta:
+    "@types/eslint":
+      optional: true
+    eslint-config-prettier:
+      optional: true
+  checksum: 812f4d1596dcd3a55963212dfbd818a4b38f880741aac75f6869aa740dc5d934060674d3b85d10ff9fec424defa61967dbdef26b8a893a92c9b51880264ed0d9
   languageName: node
   linkType: hard
 
@@ -8410,6 +8451,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-native-clean-project@npm:^4.0.3":
+  version: 4.0.3
+  resolution: "react-native-clean-project@npm:4.0.3"
+  bin:
+    react-native-clean-project: source/index.js
+  checksum: 7cf9dc6d80b2b0d6d22b66570c4dd1159c293474d0ba247c7d249cd9875b0fa3dc6b8bec21254162d08f9dcb80fdf5a699d77a8b0580ca0eb6f792d08f2b8a3b
+  languageName: node
+  linkType: hard
+
 "react-native-codegen@npm:^0.70.6":
   version: 0.70.7
   resolution: "react-native-codegen@npm:0.70.7"
@@ -9698,6 +9748,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"synckit@npm:^0.9.1":
+  version: 0.9.2
+  resolution: "synckit@npm:0.9.2"
+  dependencies:
+    "@pkgr/core": ^0.1.0
+    tslib: ^2.6.2
+  checksum: 3a30e828efbdcf3b50fccab4da6e90ea7ca24d8c5c2ad3ffe98e07d7c492df121e0f75227c6e510f96f976aae76f1fa4710cb7b1d69db881caf66ef9de89360e
+  languageName: node
+  linkType: hard
+
 "table@npm:^6.0.9":
   version: 6.8.2
   resolution: "table@npm:6.8.2"
@@ -9885,7 +9945,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.0.1":
+"tslib@npm:^2.0.1, tslib@npm:^2.6.2":
   version: 2.7.0
   resolution: "tslib@npm:2.7.0"
   checksum: 1606d5c89f88d466889def78653f3aab0f88692e80bb2066d090ca6112ae250ec1cfa9dbfaab0d17b60da15a4186e8ec4d893801c67896b277c17374e36e1d28
